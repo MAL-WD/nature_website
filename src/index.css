@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'ThmanyahDisplay';
+  src: url('./assets/fonts/thmanyahserifdisplay-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ThmanyahText';
+  src: url('./assets/fonts/thmanyahseriftext-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'ThmanyahText', 'Rubik', sans-serif;
+  }
+  
+  body {
+    font-family: 'ThmanyahText', 'Rubik', sans-serif;
+  }
+}
+
+@layer components {
+  .text-h1 {
+    font-family: 'ThmanyahDisplay', 'Rubik', sans-serif;
+    @apply text-3xl leading-tight;
+  }
+  
+  .text-h2 {
+    font-family: 'ThmanyahDisplay', 'Rubik', sans-serif;
+    @apply text-2xl leading-tight;
+  }
+  
+  .text-h3 {
+    font-family: 'ThmanyahDisplay', 'Rubik', sans-serif;
+    @apply text-xl leading-tight;
+  }
+  
+  .text-h4 {
+    font-family: 'ThmanyahDisplay', 'Rubik', sans-serif;
+    @apply text-lg leading-tight;
+  }
+  
+  .text-body {
+    @apply text-base font-normal leading-relaxed;
+  }
+  
+  .text-caption {
+    @apply text-sm font-normal leading-relaxed;
+  }
+  
+  .text-label {
+    @apply text-sm font-medium leading-tight;
+  }
+}
